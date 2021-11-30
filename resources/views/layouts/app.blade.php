@@ -15,11 +15,15 @@
 </head>
 
 <body>
-
-    <div class="container">
-        @yield('contents')
+    <div>
+        <h3>Layout Blade</h3>
+        <h5>{{ $setting }}</h5>
     </div>
-
+    <div>
+        <button>
+            <a href="{{ route('home') }}" class="btn btn-primary">Homepage</a>
+        </button>
+    </div>
 </body>
 
 @livewireScripts

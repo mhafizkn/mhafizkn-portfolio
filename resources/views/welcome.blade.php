@@ -12,6 +12,9 @@
         <!-- JS -->
         <script src="{{ asset('js/app.js') }}"></script>
 
+        <!-- CSS -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
+
         @livewireStyles
         {{-- <link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --}}
         <script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
@@ -59,12 +62,23 @@
                 </div>
 
                 <div class="pt-3">
-                    <label for="color" style="color: white;">Select Color:</label>
+                    <label for="color" style="color: ;">Select Color:</label>
                     <input data-jscolor="">
                     <hr>
-                    {{-- <label for="select2" style="color: white;">Select2: </label> --}}
+                    {{-- <label for="select2" style="color: ;">Select2: </label> --}}
                     {{-- <button><a href="/select2">Select2</a></button> --}}
                     <livewire:select2 />
+                </div>
+
+                <div class="pt-3">
+                    <label for="codemirror" style="color: ;">Code Mirror</label>
+                    <textarea id="code"></textarea>
+                </div>
+
+                <div class="pt-3">
+                    <button>
+                        <a href="{{ route('setting.index') }}" class="btn btn-primary">Another Page</a>
+                    </button>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
@@ -150,6 +164,7 @@
                 </div>
             </div>
         </div>
+    <script src="{{ asset('js/code-mirror.js') }}"></script>
     </body>
-    npm install quill@1.3.6
+
 </html>
