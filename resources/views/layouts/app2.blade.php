@@ -12,12 +12,18 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="{{ $chart->cdn() }}"></script>
 </head>
 
 <body>
     <div>
-        <h3>Layout Blade: General Setting</h3>
-        <h5>{{ $sitename }}</h5>
+        {{-- <h3>Layout Blade: Another Setting</h3>
+        <h5>{{ $sitename2 }}</h5> --}}
+        <h2>LarapexCharts</h2>
+        <div id="larapex">
+            {{ $chart->container() }}
+            {{ $chart->script() }}
+        </div>
     </div>
     <div>
         <button>

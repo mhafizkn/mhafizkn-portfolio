@@ -17,3 +17,4 @@ mix.js('resources/js/app.js', 'public/js')
     ]);
 
 mix.js('resources/js/code-mirror.js', 'public/js');
+mix.js('resources/js/apexcharts.js', 'public/js');

@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/code-mirror.js": "/js/code-mirror.js",
+    "/js/apexcharts.js": "/js/apexcharts.js",
     "/css/app.css": "/css/app.css"
 }

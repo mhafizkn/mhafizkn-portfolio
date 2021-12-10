@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\AnotherSetting;
+use App\Models\GeneralSetting;
+
 return [
 
     /*
@@ -7,7 +10,8 @@ return [
      * put them (manually) here.
      */
     'settings' => [
-        GeneralSettings::class,
+        GeneralSetting::class,
+        AnotherSetting::class,
     ],
 
     /*

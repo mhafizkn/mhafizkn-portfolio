@@ -8,5 +8,6 @@ class CreateGeneralSettings extends SettingsMigration
     {
         $this->migrator->add('general.site_name', 'Spatie');
         $this->migrator->add('general.site_active', true);
+        $this->migrator->add('general.timezone', 'Asia/Kuala_Lumpur');
     }
 }

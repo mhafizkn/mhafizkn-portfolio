@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\AnotherSettingController;
 use App\Http\Controllers\SettingController;
-use App\Http\Controllers\Settings;
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\Select2Dropdown;
+use App\Models\GeneralSetting;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +23,4 @@ Route::get('/', function () {
 //Route::get('/select2', Select2Dropdown::class);
 
 Route::resource('/setting', SettingController::class);
+Route::resource('/anothersetting', AnotherSettingController::class);

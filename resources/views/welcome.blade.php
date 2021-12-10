@@ -75,9 +75,16 @@
                     <textarea id="code"></textarea>
                 </div>
 
+                <div class="pt-3" id="chart">
+                    <span>Apexcharts</span>
+                </div>
+
                 <div class="pt-3">
                     <button>
-                        <a href="{{ route('setting.index') }}" class="btn btn-primary">Another Page</a>
+                        <a href="{{ route('setting.index') }}" class="btn btn-primary">General Setting Page</a>
+                    </button>
+                    <button>
+                        <a href="{{ route('chart.index') }}" class="btn btn-primary">Another Setting Page</a>
                     </button>
                 </div>
 
@@ -165,6 +172,7 @@
             </div>
         </div>
     <script src="{{ asset('js/code-mirror.js') }}"></script>
+    <script src="{{ asset('js/apexcharts.js') }}"></script>
     </body>
 
 </html>
